@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Table - For Loops Only</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <h1>Student Records</h1>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search name" />
+
+      <select id="gender">
+        <option value="all">All Gender</option>
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+      </select>
+
+      <select id="sort">
+        <option value="no">No Sort</option>
+        <option value="low">Grade: Low to High</option>
+        <option value="high">Grade: High to Low</option>
+      </select>
+
+      <select id="rowsPerPage">
+        <option value="5">Show 5 rows</option>
+        <option value="10" selected>Show 10 rows</option>
+        <option value="15">Show 15 rows</option>
+        <option value="999">Show all</option>
+      </select>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Grade</th>
+          <th>Address</th>
+          <th>Gender</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <script type="module" src="./assets/js/index.js"></script>
+  </body>
+</html>
